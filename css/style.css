@@ -1,0 +1,17 @@
+#form-wrapper {
+    display: inline-flexbox;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+table {
+    align-self: center;
+    justify-self: center;
+}
+
+body {
+    justify-content: center;
+    justify-items: center;
+}
+
