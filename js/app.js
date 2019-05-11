@@ -18,15 +18,23 @@ const handleSubmitForm = function (event) {
 
     const website = document.createElement('td')
     tr.appendChild(website)
-    title.textContent = `${event.target.website.value}`
+    website.textContent = `${event.target.website.value}`
 
     const type = document.createElement('td')
     tr.appendChild(type)
-    title.textContent = `${event.target.type.value}`
+    type.textContent = `${event.target.type.value}`
 
-    // const lang = document.createElement('td')
-    // tr.appendChild(lang)
-    // title.textContent = `${event.target.lang.value}`
+    const lang = document.createElement('td')
+    tr.appendChild(lang)
+    lang.textContent = `${event.target.lang.value}`
 
+    const learned = document.createElement('td')
+    tr.appendChild(learned)
+    learned.textContent = `${event.target.learned.value}`
+    
+    const description = document.createElement('td')
+    tr.appendChild(description)
+    description.textContent = `${event.target.description.value}`
 
+    
 }
