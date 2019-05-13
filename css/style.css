@@ -1,6 +1,56 @@
-#form-wrapper {
+#form {
+    display: grid;
     place-items: center center;
-    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#title-div {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+
+}
+
+#website-div {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+
+}
+
+#type-div {
+    
+    grid-column: 3 / span 2;
+    width: 100%;
+    height: 100%;
+
+}
+
+#description-div {
+    grid-column: 3 / span 2;
+    width: 100%;
+    height: 100%;
+
+}
+
+#learned-div {
+    width: 100%;
+    height: 100%;
+}
+
+#lang-div {
+    width: 100%;
+    height: 100%;
+}
+
+.form-item {
+    background: rgb(133, 133, 248);
+    border: 5px;
+    margin: 5px;
 }
 
 table {
@@ -8,13 +58,79 @@ table {
     width: 100%;
     background: rgb(37, 121, 136);
     grid-gap: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+th {
+    background: white;
+}
 
+td {
+    background: yellowgreen;
 }
 
 body {
     place-items: center center;
     text-align: center;
     background: rgb(37, 121, 136);
+    font-family: 'Stylish', sans-serif;
 
 }
 
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: lightgrey;
+  border: none;
+  color: rgb(80,120,150);
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 300px;
+  font-size: 15px;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+  background-color: maroon;
+  color: black;
+}
+
+button {
+  background-color: lightgrey;
+  border: none;
+  color: rgb(80,120,150);
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 300px;
+  font-size: 15px;
+}
+button:hover {
+  background-color: maroon;
+  color: black;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  height: 25px;
+  padding: 16px 20px;
+  border: 5px;
+  background-color: #f1f1f1;
+}
+
+label {
+  font-size: 20px;
+}

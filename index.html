@@ -6,77 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Stylish" rel="stylesheet">
     <title>Libraries, Frameworks and APIs</title>
 </head>
 
 <body>
-<h2>Libraries, Frameworks and APIs to Learn about</h2>
 
-<p>Enter the details of a Library, Framework or API below and add it to your to do list!</p>
+<header>
+    <h2>Libraries, Frameworks and APIs to Learn about</h2>
 
-    <table>
+    <p>Enter the details of a Library, Framework or API below and add it to your to do list!</p>
+
+</header>   
+
+
+    
     <div id="form-wrapper">
         
         <form id="form">
-            <tr>
-            <div class="form-item">
-                <th><label for="title">Title:</label></th>
-                <td><input type="text" id="title" value="enter title" required /></td>
-                
+           
+            <div class="form-item" id="title-div">
+                <label for="title">Title:</label>
+                <br>
+                <input type="text" id="title" value="" required />
             </div>
-            </tr>
-
-            <tr>
-            <div class="form-item">
-                <th><label for="website">Website:</label></th>
-                <td><input type="text" value="www.what.com" id="website" required /></td>
+            
+            <div class="form-item" id="website-div">
+                <label for="website">Website:</label>
+                <br>
+                <input type="text" value="" id="website" required />
             </div>
-            </tr>
-
-            <tr>
-            <div class="form-item">
-                <th><label for="type">Type:</label></th>
-                <td><div>Library</div> <input type="radio" name="type" value="Library"></td>
-                <td><div>Framework</div><input type="radio" name="type" value="Framework"></td>
-                <td><div>API</div><input type="radio" name="type" value="API"></td>
+            
+            <div class="form-item" id="type-div">
+                <label for="type">Type:</label>
+                <div>Library</div><input type="radio" name="type" value="Library">
+                <div>Framework</div><input type="radio" name="type" value="Framework">
+                <div>API</div><input type="radio" name="type" value="API">
             </div>
-            </tr>
 
-            <tr>
-            <div class="form-item">
-                <th><label for="lang">Language:</label></th>
-                <td><select name="lang" id="lang">
+            <div class="form-item" id="lang-div">
+                <label for="lang">Language:</label>
+                <br>
+                <select name="lang" id="lang">
                     <option value="" disabled selected>Pick one</option>
-                    <option value="ruby">Ruby</option>
-                    <option value="java">Java</option>
-                    <option value="js">JavaScript</option>
-                </select></td>  
+                    <option value="Ruby">Ruby</option>
+                    <option value="Java">Java</option>
+                    <option value="JavaScript">JavaScript</option>
+                </select>
             </div>
-            </tr>
 
-            <tr>
-            <div class="form-item">
-                <th><label for="learned">Learned:</label></th>
-                <td><input type="checkbox" name="learned" id="learned"></td>
+            <div class="form-item" id="learned-div">
+                <label for="learned">Learned?</label>
+                <div>Yes</div> <input type="radio" name="learned" value="Yes">
+                <div>No</div><input type="radio" name="learned" value="No">
             </div>
-            </tr>
 
-            <div class="form-item">
-                <th><label for="description">Description:</label></th>
-                <td><textarea name="description" id="description" cols="30" rows="10"></textarea></td>
-                
+            <div class="form-item" id="description-div">
+                <label for="description">Description:</label>
+                <br>
+                <textarea name="description" id="description" cols="80" rows="10"></textarea>
             </div>
-            <tr>
-                <td>
-                    <input type="submit" value="Save" />
-                    <button id="delete-all">Delete All</button>
-                </td>
+        
+                    <input type="submit" value="Save" id="submit" />
+                    <input type="submit" value="Delete All" action="Refresh" onclick="history.go(0)">
                 
-            </tr>
+            
             
         </form>
     </div>
-    </table>
+
     
     <table id="stuff-to-learn-about">
         <tr>
